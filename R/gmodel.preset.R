@@ -1,7 +1,7 @@
 #' Generate one of pre-specified graphons.
 #'
 #' \code{gmodel.preset} generates one of pre-specified graphons
-#' of size (n-by-n). Users can select one of 10 different graphons by
+#' of size \code{(n-by-n)}. Users can select one of 10 different graphons by
 #' their \code{id}, an integer from 1 to 10. The table of available graphons
 #' follows that of the reference article given below.
 #'
@@ -9,7 +9,7 @@
 #' @param id an integer from 1 to 10, each corresponding to a specific graphon model.
 #' @param sort a logical value; TRUE to sort in an decreasing order of degree, FALSE otherwise.
 #'
-#' @return an \eqn{(n-by-n)} graphon matrix.
+#' @return an \code{(n-by-n)} graphon matrix.
 #'
 #' @examples
 #' ## Generate 3 random graphons of nodal size 100.

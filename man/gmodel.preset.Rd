@@ -14,11 +14,11 @@ gmodel.preset(n, id = 1, sort = TRUE)
 \item{sort}{a logical value; TRUE to sort in an decreasing order of degree, FALSE otherwise.}
 }
 \value{
-an \eqn{(n-by-n)} graphon matrix.
+an \code{(n-by-n)} graphon matrix.
 }
 \description{
 \code{gmodel.preset} generates one of pre-specified graphons
-of size (n-by-n). Users can select one of 10 different graphons by
+of size \code{(n-by-n)}. Users can select one of 10 different graphons by
 their \code{id}, an integer from 1 to 10. The table of available graphons
 follows that of the reference article given below.
 }

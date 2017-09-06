@@ -5,14 +5,14 @@
 #' Then a consistent histogram estimator is utilized to estimate graphons based on
 #' estimated blocks in a given network.
 #'
-#' @param A an \eqn{(n-by-n)} binary adjacency matrix.
+#' @param A an \code{(n-by-n)} binary adjacency matrix.
 #' @param K the number of blocks provided by an user.
 #'
 #' @return a named list containing
 #' \describe{
-#' \item{H}{a \eqn{(K-by-K)} matrix of 3D histogram.}
-#' \item{P}{an \eqn{(n-by-n)} corresponding probability matrix.}
-#' \item{B}{a length-\eqn{K} list where each element is a vector of nodes/indices
+#' \item{H}{a \code{(K-by-K)} matrix of 3D histogram.}
+#' \item{P}{an \code{(n-by-n)} corresponding probability matrix.}
+#' \item{B}{a length-\code{K} list where each element is a vector of nodes/indices
 #' for each cluster.}
 #' }
 #'

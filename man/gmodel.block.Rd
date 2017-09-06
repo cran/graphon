@@ -7,7 +7,7 @@
 gmodel.block(W, n, rep = 1, noloop = TRUE)
 }
 \arguments{
-\item{W}{a \eqn{(K-by-K)} blockmodel matrix.}
+\item{W}{a \code{(K-by-K)} blockmodel matrix.}
 
 \item{n}{the number of nodes for each observation.}
 
@@ -19,12 +19,12 @@ gmodel.block(W, n, rep = 1, noloop = TRUE)
 a named list containing
 \describe{
 \item{G}{depending on \code{rep} value, \describe{
-\item{(rep=1)}{an \eqn{(n-by-n)} observation, or}
-\item{(rep>1)}{a length-\eqn{rep} list where each element
-is an observation is an \eqn{(n-by-n)} realization from the model.}
+\item{(rep=1)}{an \code{(n-by-n)} observation, or}
+\item{(rep>1)}{a length-\code{rep} list where each element
+is an observation is an \code{(n-by-n)} realization from the model.}
 }
 }
-\item{P}{an \eqn{(n-by-n)} probability matrix of generating each edge.}
+\item{P}{an \code{(n-by-n)} probability matrix of generating each edge.}
 }
 }
 \description{

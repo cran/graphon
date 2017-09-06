@@ -6,7 +6,7 @@
 #' of K. Parameter \code{noloop} controls whether generated observations
 #' have an edge from a node to itself, called a loop.
 #'
-#' @param W a \eqn{(K-by-K)} blockmodel matrix.
+#' @param W a \code{(K-by-K)} blockmodel matrix.
 #' @param n the number of nodes for each observation.
 #' @param rep the number of observations to be generated.
 #' @param noloop a logical value; TRUE for graphs without self-loops, FALSE otherwise.
@@ -28,12 +28,12 @@
 #' @return a named list containing
 #' \describe{
 #' \item{G}{depending on \code{rep} value, \describe{
-#' \item{(rep=1)}{an \eqn{(n-by-n)} observation, or}
-#' \item{(rep>1)}{a length-\eqn{rep} list where each element
-#' is an observation is an \eqn{(n-by-n)} realization from the model.}
+#' \item{(rep=1)}{an \code{(n-by-n)} observation, or}
+#' \item{(rep>1)}{a length-\code{rep} list where each element
+#' is an observation is an \code{(n-by-n)} realization from the model.}
 #' }
 #' }
-#' \item{P}{an \eqn{(n-by-n)} probability matrix of generating each edge.}
+#' \item{P}{an \code{(n-by-n)} probability matrix of generating each edge.}
 #' }
 #'
 #' @export

@@ -13,7 +13,7 @@ various network models and graphons.
 }
 \section{What is Graphon?}{
 
-Graphon - graph function - is a symmetric measurable function \deqn{W:[0,1]^2->[0,1]} that arise
+Graphon - graph function - is a symmetric measurable function \deqn{W:[0,1]^2\rightarrow[0,1]} that arise
 in studying exchangeable random graph models as well as sequence of dense graphs. In the language of
 graph theory, it can be understood as a two-stage procedural network modeling that 1) each vertex/node in the graph
 is assigned an independent random variable \eqn{u_j} from uniform distribution \eqn{U[0,1]}, and
@@ -33,6 +33,7 @@ The \code{'est'} family has 4 estimation methods at the current version,
   \item \code{\link{est.SBA}} for stochastic blockmodel approximation.
   \item \code{\link{est.USVT}} for universal singular value thresholding.
   \item \code{\link{est.nbdsmooth}} for neighborhood smoothing.
+  \item \code{\link{est.completion}} for matrix completion from a partially revealed data.
 }
 
 Also, the current release has following graph models implemented,

@@ -7,8 +7,8 @@
 #' the cross validation risk. Note that the optimal delta is not bound to be a single value.
 #'
 #' @param A either \describe{
-#' \item{Case 1.}{an \eqn{(n-by-n)} binary adjacency matrix, or}
-#' \item{Case 2.}{a vector containing multiple of \eqn{(n-by-n)} binary adjacency matrices.}
+#' \item{Case 1.}{an \code{(n-by-n)} binary adjacency matrix, or}
+#' \item{Case 2.}{a vector containing multiple of \code{(n-by-n)} binary adjacency matrices.}
 #' }
 #' @param vecdelta a vector containing target delta values to be tested.
 #'

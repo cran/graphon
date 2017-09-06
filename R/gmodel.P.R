@@ -4,7 +4,7 @@
 #' binary observation graphs corresponding to Bernoulli distribution
 #' whose parameter matches to the element of P.
 #'
-#' @param P an \eqn{(n-by-n)} probability matrix.
+#' @param P an \code{(n-by-n)} probability matrix.
 #' @param rep the number of observations to be generated.
 #' @param noloop a logical value; TRUE for graphs without self-loops, FALSE otherwise.
 #' @param symmetric.out a logical value; FALSE for generated graphs to be nonsymmetric, TRUE otherwise. Note that
@@ -25,9 +25,9 @@
 #'
 #' @return depending on \code{rep} value, either
 #' \describe{
-#' \item{(rep=1)}{an \eqn{(n-by-n)} observation matrix, or}
-#' \item{(rep>1)}{a length-\eqn{rep} list where each element
-#' is an observation is an \eqn{(n-by-n)} realization from the model.}
+#' \item{(rep=1)}{an \code{(n-by-n)} observation matrix, or}
+#' \item{(rep>1)}{a length-\code{rep} list where each element
+#' is an observation is an \code{(n-by-n)} realization from the model.}
 #' }
 #'
 #' @export

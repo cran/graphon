@@ -23,9 +23,9 @@
 #'
 #' @return depending on \code{rep} value, either
 #' \describe{
-#' \item{(rep=1)}{an \eqn{(n-by-n)} observation matrix, or}
-#' \item{(rep>1)}{a length-\eqn{rep} list where each element
-#' is an observation is an \eqn{(n-by-n)} realization from the model.}
+#' \item{(rep=1)}{an \code{(n-by-n)} observation matrix, or}
+#' \item{(rep>1)}{a length-\code{rep} list where each element
+#' is an observation is an \code{(n-by-n)} realization from the model.}
 #' }
 #'
 #' @examples
