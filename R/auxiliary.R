@@ -1,3 +1,5 @@
+#' @keywords internal
+#' @noRd
 is.Adj <- function(A){
   # 1. size
   cond1 = ((is.matrix(A))&&(nrow(A)==ncol(A)))
@@ -16,6 +18,8 @@ is.Adj <- function(A){
 }
 
 ## Binary {0,1} adjacency
+#' @keywords internal
+#' @noRd
 is.binAdj <- function(A,sym=TRUE){
   # 1. size
   cond1 = ((is.matrix(A))&&(nrow(A)==ncol(A)))
@@ -39,6 +43,8 @@ is.binAdj <- function(A,sym=TRUE){
   }
 }
 
+#' @keywords internal
+#' @noRd
 is.binAdjvec <- function(vecA,sym=TRUE){
   # 1. size
   cond1 = (length(unique(unlist(lapply(vecA,nrow)))==1))
@@ -68,6 +74,8 @@ is.binAdjvec <- function(vecA,sym=TRUE){
   }
 }
 
+#' @keywords internal
+#' @noRd
 sum3 <- function(vecA,x,y,z){
   T = length(vecA)
   if (is.logical(x)){
@@ -94,6 +102,8 @@ sum3 <- function(vecA,x,y,z){
 # Output - a list containing
 #   H : 3D histogram
 #   P : corresponding probability matrix of (n x n)
+#' @keywords internal
+#' @noRd
 histogram3D <- function(G,B){
   # 1. get information about data
   n  = nrow(G[[1]])
@@ -133,7 +143,8 @@ histogram3D <- function(G,B){
   return(res)
 }
 
-
+#' @keywords internal
+#' @noRd
 aux_nbdsmooth <- function(A,N){
   # definitions
   D = array(0,c(N,N))
@@ -153,6 +164,8 @@ aux_nbdsmooth <- function(A,N){
 }
 
 # gmodel.preset : fast generation -----------------------------------------
+#' @keywords internal
+#' @noRd
 aux_preset <- function(vecgrid,n,id){
   # preparation
   W = array(0,c(n,n))
