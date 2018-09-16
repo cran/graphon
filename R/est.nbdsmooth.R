@@ -8,8 +8,8 @@
 #'
 #'
 #' @param A either \describe{
-#' \item{Case 1.}{an \code{(n-by-n)} binary adjacency matrix, or}
-#' \item{Case 2.}{a vector containing multiple of \code{(n-by-n)} binary adjacency matrices.}
+#' \item{Case 1.}{an \eqn{(n\times n)} binary adjacency matrix, or}
+#' \item{Case 2.}{a vector containing multiple of \eqn{(n\times n)} binary adjacency matrices.}
 #' }
 #'
 #' @return a named list containing
@@ -19,6 +19,7 @@
 #' }
 #'
 #' @examples
+#' \dontrun{
 #' ## generate a graphon of type No.4 with 3 clusters
 #' W = gmodel.preset(3,id=4)
 #'
@@ -36,10 +37,11 @@
 #' par(mfrow=c(1,2))
 #' image(P); title("original P")
 #' image(res2$P); title("nbdsmooth estimated P")
+#' }
 #'
+#' @references
+#' \insertRef{Zhang2015}{graphon}
 #'
-#' @references Zhang, Y., Levina, E., and Zhu, J. (2015) \emph{Estimating neighborhood edge
-#' probabilities by neighborhood smoothing}. Arxiv:1509.08588
 #' @export
 est.nbdsmooth <- function(A){
   # CASE 1. VECTORIAL CASE
