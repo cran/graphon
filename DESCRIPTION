@@ -1,7 +1,7 @@
 Package: graphon
 Type: Package
 Title: A Collection of Graphon Estimation Methods
-Version: 0.3.0
+Version: 0.3.1
 Authors@R: person(given="Kisung",family="You",role=c("aut","cre"),email="kyou@nd.edu",comment=c(ORCID="0000-0002-8584-459X"))
 Description: Provides a not-so-comprehensive list of methods for estimating graphon,
     a symmetric measurable function, from a single or multiple of observed networks. 
@@ -12,12 +12,13 @@ Description: Provides a not-so-comprehensive list of methods for estimating grap
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
+Suggests: igraph
 Imports: stats, graphics, ROptSpace, utils, Rdpack
 RdMacros: Rdpack
-RoxygenNote: 6.1.0
+RoxygenNote: 6.1.1
 NeedsCompilation: no
-Packaged: 2018-09-16 21:46:24 UTC; kisung
+Packaged: 2019-02-02 23:07:27 UTC; kisung
 Author: Kisung You [aut, cre] (<https://orcid.org/0000-0002-8584-459X>)
 Maintainer: Kisung You <kyou@nd.edu>
 Repository: CRAN
-Date/Publication: 2018-09-16 22:00:03 UTC
+Date/Publication: 2019-02-03 16:03:21 UTC
