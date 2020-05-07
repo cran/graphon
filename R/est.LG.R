@@ -34,7 +34,8 @@
 #' res4 = est.LG(A,K=4)
 #'
 #' ## compare true probability matrix and estimated ones
-#' opar <- par(mfrow=c(2,2), pty="s")
+#' opar = par(no.readonly=TRUE)
+#' par(mfrow=c(2,2), pty="s")
 #' image(P, main="original P matrix")
 #' image(res2$P, main="LG with K=2")
 #' image(res3$P, main="LG with K=3")
@@ -49,7 +50,7 @@
 #'
 #' @seealso \code{\link{est.SBA}}
 #' @export
-est.LG <- function(A,K){
+est.LG <- function(A,K=2){
   ## Preprocessing : Directed Allowed
   if (is.vector(A)&&is.list(A)){
     if (!is.binAdjvec(A,sym=FALSE)){
@@ -67,10 +68,10 @@ est.LG <- function(A,K){
   G = sum3(vecA,1:n,1:n,1:length(vecA))
 
   ## Preprocessing : K : number of blocks
-  if ((round(K)<1)||(round(K)>n)){
+  K = round(K)
+  if ((K<1)||(K>n)){
     stop("* est.LG : the number of blocks K should be an integer in [1,number of nodes].")
   }
-  K = round(K)
 
   ## Main Computation for Largest Gap Blocks
   Deg = rowSums(G-diag(diag(G)))           # degree
