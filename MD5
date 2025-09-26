@@ -1,4 +1,4 @@
-fa92ad0b7d2a360fa0887807d570a2cd *DESCRIPTION
+22b9fd3e4eeca306907db78f8c1f490e *DESCRIPTION
 5c1a280a75c51fd62e5d3ba3966f3f7f *LICENSE
 68e27a62749c361b52845592bf02e065 *NAMESPACE
 841863aea7bd7acf14cf09008df33b46 *NEWS.md
@@ -14,10 +14,10 @@ c840bc4f6732203d2f94f36a0d44ede9 *R/auxiliary.R
 2058ca3af82d0e07be1c84a9ce19f008 *R/gmodel.P.R
 e27c7e0e23fc7ad13e026b789818ba33 *R/gmodel.block.R
 d20b226c9983e574e2864aa6ec6288fa *R/gmodel.preset.R
-bca67d1cb3a6b8bcf4b77c67f5d43c89 *R/graphon-package.R
-d1a2c1ebcbaa92032757539153040959 *R/init.R
-eba1002c55a5830f4cd055e63f95db0f *README.md
-d153fd03c7632c66675b1eb21de0e207 *build/partial.rdb
+c637fa6b56a88c885b2602b9b479bd8d *R/graphon-package.R
+bc39fdf90fc39ad4ae03b904a0e447e6 *R/init.R
+67f7ed6797d00b4eef000576c7330fe3 *README.md
+bb1fc9ccdba908b72b95e50b8b4022e6 *build/partial.rdb
 5beaf1051980ab1e164ac914cd2eb245 *inst/REFERENCES.bib
 d6569b46ced301813beadde24995553c *man/cv.SBA.Rd
 c5bab4f5810fc4e61be1fc5187863c9d *man/est.LG.Rd
@@ -29,4 +29,3 @@ a6272d3591bc800767e0e804ffb92f04 *man/est.nbdsmooth.Rd
 53906026b2a43f42af62095b7edefa45 *man/gmodel.P.Rd
 8a67d9537179e8cb124b03022390d04f *man/gmodel.block.Rd
 b7217500600a02186c8c3424510b5eb8 *man/gmodel.preset.Rd
-e812ef39eb4e70df8f9f860422dd1ce0 *man/graphon-package.Rd
